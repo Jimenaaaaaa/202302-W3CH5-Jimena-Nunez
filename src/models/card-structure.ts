@@ -7,10 +7,11 @@ export type ProtoCardStructure = {
 
 export class CardStructure implements ProtoCardStructure {
   public favourite!: boolean;
-  name!: string;
-  artwork!: string;
+  // public name!: string;
+  // public artwork!: string;
+  public id!: number;
 
-  constructor(public id: number) {
+  constructor(public name: string, public artwork: string) {
     this.favourite = false;
   }
 }
