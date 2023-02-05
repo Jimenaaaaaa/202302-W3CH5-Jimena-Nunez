@@ -5,11 +5,11 @@ export const POKARRAY = [
     previous: null,
     results: [
       {
-        id:1,
+        id: 1,
         name: 'bulbasaur',
         artwork:
           'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-i/yellow/1.png',
-        favourite:false
+        favourite: false,
       },
       {
         name: 'ivysaur',
