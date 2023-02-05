@@ -1,0 +1,52 @@
+ul {
+  padding: 10px;
+}
+
+span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(68, 62, 74, 0.321);
+}
+
+li {
+  background-color: rgb(218, 215, 227);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid rgba(68, 62, 74, 0.554);
+  .pokeImage {
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .star {
+    height: 40px;
+    object-fit: cover;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+
+  .star :active {
+    height: 50px;
+  }
+
+  p {
+    padding-left: 10px;
+    text-align: center;
+    color: rgb(46, 43, 56);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+ul :hover {
+  background-color: rgb(178, 173, 193);
+  .pokeImage {
+    padding: 0px;
+  }
+}
