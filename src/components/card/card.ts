@@ -5,14 +5,14 @@ import { Component } from '../component/component';
 import './card.scss';
 
 export class Card extends Component {
-  constructor(public selector: string, public card: CardStructure) {
-    super();
-    this.template = this.createTemplate();
-    this.render('beforeend');
-  }
+	constructor(public selector: string, public card: CardStructure) {
+		super();
+		this.template = this.createTemplate();
+		this.render('beforeend');
+	}
 
-  createTemplate() {
-    return `<li>
+	createTemplate() {
+		return `<li>
     <img class="pokeImage" src="${this.card.artwork}" alt="">
     <span>
       <p># ${this.card.id}  -  ${this.card.name}</p>
@@ -21,10 +21,10 @@ export class Card extends Component {
        </div>
     </span>
     </li>`;
-  }
+	}
 
-  render(place: globalThis.InsertPosition) {
-    super.render(place);
-    // A;adir aqui los add event listeners
-  }
+	render(place: globalThis.InsertPosition) {
+		super.render(place);
+		// A;adir aqui los add event listeners
+	}
 }
