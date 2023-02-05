@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import { CardStructure } from '../../models/card-structure';
 import { Component } from '../component/component';
-import './card.scss'
+import './card.scss';
 
 export class Card extends Component {
   constructor(public selector: string, public card: CardStructure) {
@@ -13,8 +13,13 @@ export class Card extends Component {
 
   createTemplate() {
     return `<li>
-    <img src="${this.card.artwork}" alt="">
-    <p>${this.card.name}</p>
+    <img class="pokeImage" src="${this.card.artwork}" alt="">
+    <span>
+      <p># ${this.card.id}  -  ${this.card.name}</p>
+      <div>
+       <img class="star" src="../../../star.png" alt="">
+       </div>
+    </span>
     </li>`;
   }
 

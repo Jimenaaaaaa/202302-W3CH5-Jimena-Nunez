@@ -1,13 +1,9 @@
-import { CardStructure } from './models/card-structure';
-import { Card } from './components/card/card';
+/* eslint-disable no-new */
+
 import { Header } from './components/header/header';
 import './index.scss';
-
-const bulbasaur = new CardStructure(
-  'bulbasaur',
-  'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-i/yellow/1.png'
-  // False
-);
+import { PokemonApiRepo } from './services/repository/pokemon.api.repo';
+import { PokemonList } from './components/pokemons-list/pokemon-list';
 
 new Header('main');
-new Card('ul', bulbasaur);
+new PokemonList('main', new PokemonApiRepo());
